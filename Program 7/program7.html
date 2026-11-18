@@ -1,0 +1,38 @@
+<html>
+<head><title>Event In JS</title>
+<style>  
+button{
+       position:absolute;
+       top:50%;
+       left:50%;
+       padding:16px 30px;
+       text-align:center;
+      }
+     
+h3{
+   
+   position:absolute;
+   top:58%;
+   left:46%;
+  }
+</style>
+</head>
+<body>
+<h3>To change background color</h3> <button onclick="background()">CLICK</button>
+
+<script>
+
+function background()
+{
+
+ var r=Math.floor(Math.random()*256);
+ var g=Math.floor(Math.random()*256);
+ var b=Math.floor(Math.random()*256);
+
+ document.body.style.backgroundColor="rgb("+r+","+g+","+b+")";
+
+}
+
+</script>
+</body>
+</html>

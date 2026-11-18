@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Event Occur</title>
+<style>
+img{
+    border-radius: 50%;
+    position:absolute;
+    top:40%;
+    left:40%;
+   }
+   
+p{
+  
+   position:absolute;
+   top:64%;
+   left:44%;
+
+ }
+</style>
+</head>
+<body>
+<img src="a.jpeg" id="image" onmouseover="one()" onmouseout="two()">
+<p id="p1">Tap
+</p>
+
+<script>
+
+function one()
+{
+ document.getElementById("image").src="b.jpeg";
+ document.getElementById("p1").innerHTML="onmouseover";
+ document.getElementById("p1").style.color="blue";
+}
+
+function two()
+{
+ document.getElementById("image").src="c.jpeg";
+ document.getElementById("p1").innerHTML="onmouseout";
+ document.getElementById("p1").style.color="red";
+}
+
+
+</script>
+
+</body>
+</html>
